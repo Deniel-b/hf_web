@@ -167,23 +167,61 @@ ul li a:hover {
     margin: 50px auto 0;
 }
 
+<<<<<<< HEAD
 .loh {
     font-size: 25px;
     color: #333;
+=======
+/* фоточки */
+
+.about{
+	display: flex;
+	justify-content: space-between;
+>>>>>>> df2ea8567b0b7f13b44d618b56d06ca92147c7d8
 }
 
+.about__item:hover .about__img img{
+	transform: translate3d(-10px,-10px,
+		0px);
+}
 
+<<<<<<< HEAD
 /* фоточки */
+=======
+.about__item:hover .about__img img{
+	opacity: .3;
+>>>>>>> df2ea8567b0b7f13b44d618b56d06ca92147c7d8
 
 .half1 {
     display: flex;
     justify-content: space-between;
 }
 
+<<<<<<< HEAD
 .about__item:hover .about__img img {
     opacity: .7;
 }
 
 .about__img {
     background: linear-gradient(to bottom, #f38181, #fce38a);
+=======
+
+.about__img{
+	background: linear-gradient(to bottom,
+	#f38181,#fce38a);
+
+	transition: transform .1s linear;
+}
+
+.about__img img{
+	display: block;
+	transition: opacity .1s linear;
+}
+
+.text__about{
+	font-size: 18px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+>>>>>>> df2ea8567b0b7f13b44d618b56d06ca92147c7d8
 }
