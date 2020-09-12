@@ -4,7 +4,7 @@ body {
 
 	font-size: 15px;
 	line-height: 1.6.
-	color #333;
+	color: #333;
 }
 
 /*background*/
@@ -12,7 +12,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	width: 60 ;
+	width: 60 %;
 	height: 100vh;
 
 	background: 
@@ -175,20 +175,37 @@ ul li a:hover{
 
 /* фоточки */
 
-.half1{
+.about{
 	display: flex;
 	justify-content: space-between;
 }
 
+.about__item:hover .about__img img{
+	transform: translate3d(-10px,-10px,
+		0px);
+}
 
 .about__item:hover .about__img img{
-	opacity: .7;
+	opacity: .3;
 
 }
 
 
 .about__img{
 	background: linear-gradient(to bottom,
-		#f38181,#fce38a);
+	#f38181,#fce38a);
+
+	transition: transform .1s linear;
 }
 
+.about__img img{
+	display: block;
+	transition: opacity .1s linear;
+}
+
+.text__about{
+	font-size: 18px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+}
