@@ -1,12 +1,11 @@
 from flask import Flask, config, request, url_for
 from flask import render_template, g
-from flask_sqlalchemy import SQLAlchemy
-import sqlite3  
+import sqlite3
 import os
 
 app = Flask(__name__, static_folder='static', static_url_path='')
 app.config['TEMPLATES_AUTO_RELOAD'] = True
-# DATABASE = '/path/to/database.db'
+DATABASE = '../database/stat.db'
 
 @app.route("/", methods=['GET'])
 def index():
