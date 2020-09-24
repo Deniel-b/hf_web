@@ -3,9 +3,10 @@ from flask import render_template, g
 import sqlite3
 import os
 
+
 app = Flask(__name__, static_folder='static', static_url_path='')
 app.config['TEMPLATES_AUTO_RELOAD'] = True
-DATABASE = '../database/stat.db'
+
 
 @app.route("/", methods=['GET'])
 def index():
