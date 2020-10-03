@@ -216,8 +216,7 @@ ul li a:hover{
   margin: 0;
   box-sizing: border-box;
 }
-.post-wrap {
-  
+.post-wrap { 
     margin: 0 auto;
     display: flex;
     justify-content: center;
