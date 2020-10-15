@@ -33,8 +33,8 @@ def add_header(r):
     r.headers['Cache-Control'] = 'public, max-age=0'
     return r
 
-@app.route("/test", methods=["GET"])
+@app.route("/news", methods=["GET"])
 def test():
     for usr in User.select():
-        print(usr.Name)
-    return "Hello world"
+        a = usr.Name
+    return render_template('news.html', name=a)
