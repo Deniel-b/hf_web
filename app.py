@@ -2,7 +2,7 @@ from flask import Flask, config, request, url_for
 from flask import render_template, g
 import sqlite3
 import os
-from database.database import User
+from database.database import News
 
 app = Flask(__name__, static_folder='static', static_url_path='')
 app.config['TEMPLATES_AUTO_RELOAD'] = True
@@ -35,6 +35,6 @@ def add_header(r):
 
 @app.route("/news", methods=["GET"])
 def test():
-    for usr in User.select():
-        a = usr.Name
-    return render_template('news.html', name=a)
+    for nws in News.select():
+        a = nws.New
+    return render_template('news.html', news =a)
