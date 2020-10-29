@@ -1,3 +1,7 @@
+html {
+	padding: 0 ;
+}
+
 /*фон*/
 .title__lor{
 	display: flex;
@@ -12,32 +16,16 @@
 }
 
 
+/*главный блок*/
 
-.title1{
-	color: #fff;
-	text-align: center;
-	font-size: 80px;
-
-	width: 40%;
-	display: flex;
-	margin-bottom: 10%;
-	margin-right: 35%;
-	margin-left: 30%;
+.container{
+	max-width: 1366px;
+	margin: 0 auto;
 }
 
-.title2{
-	
-	color: #fff;
-	font-size: 25px;
-
-	display: flex;
-	margin-left: 10px;	
-}
-
-.title3{
-	font-size: 25px;
-	color: #fff;
-
-	display: flex;
-	margin-left: ;
+.lor__skitalec{
+	display: block;
+	width: 100%;
+	background: rgba(217, 217, 217,0.5);
+	height: 500px;
 }
