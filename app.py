@@ -10,7 +10,7 @@ app.config['TEMPLATES_AUTO_RELOAD'] = True
 
 @app.route("/", methods=['GET'])
 def index():
-    return app.send_static_file("index.html")
+    return app.send_static_file("index_copy.html")
 
 @app.context_processor
 def override_url_for():
