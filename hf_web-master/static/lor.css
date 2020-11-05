@@ -1,0 +1,60 @@
+html {
+
+}
+
+body {
+	padding: 0 ;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	background: 
+	url(https://www.caffeinegaming.com/wp-content/uploads/2019/03/e7arhBHQobsuzEUvCH2kfa.png)center
+	no-repeat;
+	justify-content: center;
+}
+
+/*главный блок*/
+
+
+
+.container{
+	height: 100%;
+	margin: 0 auto;
+
+}
+
+.lor__skitalec{
+	width: 800px;
+	background: rgba(217, 217, 217,0.5);
+	height: 500px;
+}
+
+.big__wrapper{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.title1{
+	font-size: 30px;
+	max-width: 80%;
+}
+
+
+.text__wrapper{
+
+	width: 150px; 
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+
+.image_wrapper {
+	width:60% ;
+	margin-right: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
