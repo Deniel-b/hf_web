@@ -55,4 +55,3 @@ def exotics():
         meta.append(weapon.PicLink)
         data.append(tuple(meta))
         meta.clear()
-        
