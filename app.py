@@ -3,6 +3,8 @@ from flask import render_template, g
 import sqlite3
 import os
 from database.database import User
+from database.exotics_db import Exotics
+import request
 
 app = Flask(__name__, static_folder='static', static_url_path='')
 app.config['TEMPLATES_AUTO_RELOAD'] = True
@@ -34,7 +36,23 @@ def add_header(r):
     return r
 
 @app.route("/news", methods=["GET"])
-def test():
+def news():
     for usr in User.select():
         a = usr.Name
     return render_template('news.html', name=a)
+
+@app.route('/exotics', methods=["GET"])
+def exotics():
+    data = list()
+    meta = list()
+    for weapon in Exotics.select():
+        meta.append(weapon.ID)
+        meta.append(weapon.Name)
+        meta.append(weapon.Type)
+        meta.append(weapon.Energy)
+        meta.append(weapon.Unlock)
+        meta.append(weapon.Description)
+        meta.append(weapon.PicLink)
+        data.append(tuple(meta))
+        meta.clear()
+        
