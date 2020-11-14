@@ -57,4 +57,4 @@ def exotics():
         # meta.clear()
     jsonDB = json.dumps(data, ensure_ascii=False)
     print(jsonDB)
-    render_template('templates/exotics.html', jsonfile=list(jsonDB))
+    return render_template('exotics.html', jsonfile=jsonDB)

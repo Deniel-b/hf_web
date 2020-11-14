@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 	<title>exotics</title>
 </head>
 <body>
-    <p><h1> Sample text </h1></p>
+    <script>
+        axios.get('/exotics').then(res => {
+            console.log(res);
+    </script>
 </body>
 </html>
