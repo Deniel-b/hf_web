@@ -4,7 +4,8 @@ import sqlite3
 import os
 from database.database import User
 from database.exotics_db import Exotics
-import request
+import json
+# import request
 
 app = Flask(__name__, static_folder='static', static_url_path='')
 app.config['TEMPLATES_AUTO_RELOAD'] = True
