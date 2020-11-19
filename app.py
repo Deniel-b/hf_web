@@ -6,6 +6,7 @@ from database.database import User
 from database.exotics_db import Exotics
 import json
 
+
 # import request
 
 app = Flask(__name__, static_folder='static', static_url_path='')
@@ -14,7 +15,7 @@ app.config['TEMPLATES_AUTO_RELOAD'] = True
 
 @app.route("/", methods=['GET'])
 def index():
-    return app.send_static_file("index_copy.html")
+    return app.send_static_file("codes/index_copy.html")
 
 
 @app.context_processor
@@ -55,6 +56,8 @@ def exotics():
         data[weapon.ID] = meta
         # print(data)
         # meta.clear()
-    jsonDB = json.dumps(data, ensure_ascii=False)
-    print(jsonDB)
-    return render_template('exotics.html', jsonfile=jsonDB)
+    # with open("jsonbin/exotic.json", "w") as outfile:
+        #json.dump(data, outfile, ensure_ascii=False)
+    # jsonDB = json.dumps(data, ensure_ascii=False)
+    # print(jsonDB)
+    return render_template('exotics.html')
