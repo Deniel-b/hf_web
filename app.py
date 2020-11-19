@@ -2,7 +2,6 @@ from flask import Flask, config, request, url_for
 from flask import render_template, g
 import sqlite3
 import os
-from database.database import User
 from database.exotics_db import Exotics
 import json
 
@@ -56,8 +55,8 @@ def exotics():
         data[weapon.ID] = meta
         # print(data)
         # meta.clear()
-    # with open("jsonbin/exotic.json", "w") as outfile:
-        #json.dump(data, outfile, ensure_ascii=False)
+    with open("jsonbin/exotic.json", "w") as outfile:
+        json.dump(data, outfile, ensure_ascii=False)
     # jsonDB = json.dumps(data, ensure_ascii=False)
     # print(jsonDB)
     return render_template('exotics.html')
