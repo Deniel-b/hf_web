@@ -1,4 +1,4 @@
-from peewee import *
+from peewee import TextField, PrimaryKeyField, SqliteDatabase, Model
 
 
 db = SqliteDatabase("database/exotics.db")
